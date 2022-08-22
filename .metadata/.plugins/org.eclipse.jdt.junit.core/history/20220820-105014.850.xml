@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OrderTest" project="junittest-line-item" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.aurionpro.model.OrderTest" time="0.021" displayname="OrderTest" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OrderTest]">
+    <testcase name="testOrderCount_orders" classname="com.aurionpro.model.OrderTest" time="0.015" displayname="testOrderCount_orders()" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OrderTest]/[method:testOrderCount_orders()]"/>
+    <testcase name="testCalculateCart_check" classname="com.aurionpro.model.OrderTest" time="0.006" displayname="testCalculateCart_check()" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OrderTest]/[method:testCalculateCart_check()]"/>
+  </testsuite>
+</testrun>

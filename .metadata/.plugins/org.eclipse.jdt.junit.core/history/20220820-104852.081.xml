@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LineItemTest" project="junittest-line-item" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.aurionpro.model.LineItemTest" time="0.021" displayname="LineItemTest" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.LineItemTest]">
+    <testcase name="testCalculateLineItemCost_checkline1" classname="com.aurionpro.model.LineItemTest" time="0.016" displayname="testCalculateLineItemCost_checkline1()" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.LineItemTest]/[method:testCalculateLineItemCost_checkline1()]"/>
+    <testcase name="testCalculateLineItemCost_checkline2" classname="com.aurionpro.model.LineItemTest" time="0.005" displayname="testCalculateLineItemCost_checkline2()" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.LineItemTest]/[method:testCalculateLineItemCost_checkline2()]"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,30 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class LineItemTest {
+
+	Product p1 = new Product(101, "Maggi", 20, 10);
+	Product p2 = new Product(102, "chips", 20, 5);
+
+	LineItem line1 = new LineItem(101, 5, p1);
+	LineItem line2 = new LineItem(20, 8, p2);
+
+	@Test
+	void testCalculateLineItemCost_checkline1() {
+		double expected = (20 + 20 * 0.1) * 5;
+		double actual = line1.calculateLineItemCost();
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void testCalculateLineItemCost_checkline2() {
+		double expected = (20 + 20 * 0.05) * 8;
+		double actual = line2.calculateLineItemCost();
+		assertEquals(expected, actual);
+	}
+
+}

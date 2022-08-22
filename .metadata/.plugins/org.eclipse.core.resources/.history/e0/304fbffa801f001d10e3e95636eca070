@@ -1,0 +1,47 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class CustomerTest {
+
+	Product p1 = new Product(101, "Maggi", 20, 10);
+	Product p2 = new Product(102, "chips", 20, 5);
+//	@Test
+//	void testCalculatePriceAfterDiscount_check() {
+//		double expected = 18;
+//		double actual = Maggi.calculatePriceAfterDiscount();
+//		assertEquals(expected, actual);
+//	}
+	
+	LineItem line1 = new LineItem(101, 5, p1);
+	LineItem line2 = new LineItem(20, 8, p2);
+	
+	@Test
+	void testCalculateLineItemCost_checkline1() {
+		double expected = 110;
+		double actual = line1.calculateLineItemCost();
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testCalculateLineItemCost_checkline2() {
+		double expected = 168;
+		double actual = line2.calculateLineItemCost();
+		assertEquals(expected, actual);
+	}
+	
+	Order order = new Order(101, "18/08/2022");
+	
+	@Test
+	void testCalculateCart_check() {
+		order.addLineItem(line1);
+		order.addLineItem(line2);
+		double expected = 18*5;
+		double actual = order.calculateOrderPrice();
+		assertEquals(expected, actual);
+	}
+	
+	
+}
